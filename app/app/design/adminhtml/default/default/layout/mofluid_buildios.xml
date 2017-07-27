@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_buildios_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_buildios/adminhtml_form_edit" name="buildios"/>
+        </reference>
+        <reference name="left">
+            <block type="mofluid_buildios/adminhtml_form_edit_tabs" name="buildios_tabs"/>
+        </reference>
+    </adminhtml_buildios_index>
+    <default>
+    
+       <reference name="head">
+        
+           <action method="addJs">
+               <script>mofluid/js/jscolor.js</script>
+           </action>
+        </reference>
+    </default>
+</layout>

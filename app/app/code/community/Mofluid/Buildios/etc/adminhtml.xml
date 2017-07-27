@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mofluid translate="title" module="mofluid_buildios">
+            <title>Mofluid</title>
+            <sort_order>90</sort_order>
+            <children>
+                <mofluid_build translate="title" module="mofluid_buildios">
+                    <title>Download Build</title>
+                    <sort_order>9999</sort_order>
+                    <children>
+                        <mofluid_buildios_form translate="title" module="mofluid_buildios">
+                            <title>iOS</title>
+                            <sort_order>1</sort_order>
+                            <action>adminhtml/buildios</action>
+                        </mofluid_buildios_form>
+                    </children>
+                </mofluid_build>
+            </children>
+        </mofluid>
+    </menu>
+    <!--Access Control Settings-->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluid_buildios">
+                        <title>Mofluid</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <mofluid_build translate="title" module="mofluid_buildios">
+                                <title>Download Build</title>
+                                <sort_order>99999</sort_order>
+                                <children>
+                                    <mofluid_buildios_form translate="title" module="mofluid_buildios">
+                                        <title>iOS</title>
+                                        <sort_order>1</sort_order>
+                                    </mofluid_buildios_form>
+                                </children>
+                            </mofluid_build>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Thememofluidmodern>
+            <version>1.0.0</version>
+            <title>Mofluid Theme - </title>
+            <type>Modern</type>
+        </Mofluid_Thememofluidmodern>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_thememofluidmodern>
+                <class>Mofluid_Thememofluidmodern_Block</class>
+            </mofluid_thememofluidmodern>
+        </blocks>
+
+        <helpers>
+            <mofluid_thememofluidmodern>
+                <class>Mofluid_Thememofluidmodern_Helper</class>
+            </mofluid_thememofluidmodern>
+        </helpers>
+
+        <models>
+            <mofluid_thememofluidmodern>
+                <class>Mofluid_Thememofluidmodern_Model</class>
+                <resourceModel>mofluid_thememofluidmodern_mysql4</resourceModel>
+            </mofluid_thememofluidmodern>
+            <mofluid_thememofluidmodern_mysql4>
+                <class>Mofluid_Thememofluidmodern_Model_Mysql4</class>
+                <entities>
+                    <mofluid_themes_core>
+                        <table>mofluid_themes</table>
+                    </mofluid_themes_core>
+
+                    <mofluid_themes_messages>
+                        <table>mofluid_themes_messages</table>
+                    </mofluid_themes_messages>
+
+
+                    <mofluid_themes_colors>
+                        <table>mofluid_themes_colors</table>
+                    </mofluid_themes_colors>
+
+                    <mofluid_themes_images>
+                        <table>mofluid_themes_images</table>
+                    </mofluid_themes_images>
+
+
+                </entities>
+            </mofluid_thememofluidmodern_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_thememofluidmodern_setup>
+                <setup>
+                    <module>Mofluid_Thememofluidmodern</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_thememofluidmodern_setup>
+            <mofluid_thememofluidmodern_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_thememofluidmodern_write>
+            <mofluid_thememofluidmodern_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_thememofluidmodern_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_thememofluidmodern after="Mage_Adminhtml">Mofluid_Thememofluidmodern_Adminhtml</mofluid_thememofluidmodern>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_thememofluidmodern>
+                    <file>mofluid_thememofluidmodern.xml</file>
+                </mofluid_thememofluidmodern>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Thememofluidmodern>
+                    <files>
+                        <default>Mofluid_Thememofluidmodern.csv</default>
+                    </files>
+                </Mofluid_Thememofluidmodern>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_thememofluidmodern>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_thememofluidmodern>
+    </default>
+
+
+
+
+
+<sections>
+    <general>
+      <groups>
+        <samples translate="label comment" module="thememofluidmodern">
+          <label>Sample Product Amount Setting</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>150</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields> 
+            <amountlimit translate="label">
+              <label>Minimum Amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </amountlimit>
+           
+          </fields>
+        </samples>
+      </groups>
+    </general>
+  </sections>
+</config>

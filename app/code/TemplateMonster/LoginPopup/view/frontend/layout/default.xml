@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="side.navbar.popup.login">
+            <block class="TemplateMonster\LoginPopup\Block\Form\Login" name="customer.form.login.popup" template="login.phtml">
+                <block class="Magento\Persistent\Block\Form\Remember" name="popup.persistent.remember.me" as="popup_persistent_remember_me" template="TemplateMonster_LoginPopup::remember_me.phtml" />
+            </block>
+            <block class="TemplateMonster\LoginPopup\Block\Form\Register" name="customer.form.register.popup" template="register.phtml" />
+        </referenceContainer>
+    </body>
+</page>

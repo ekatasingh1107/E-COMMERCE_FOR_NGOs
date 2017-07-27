@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Paymentbanktransfer>
+            <active>true</active>
+            <codePool>community</codePool>
+            </Mofluid_Paymentbanktransfer>
+    </modules>
+</config>

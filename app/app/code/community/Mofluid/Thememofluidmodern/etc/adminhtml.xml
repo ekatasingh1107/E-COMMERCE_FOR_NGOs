@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mofluid translate="title" module="mofluid_thememofluidmodern">
+            <title>Mofluid</title>
+            <sort_order>90</sort_order>
+            <children>
+                <mofluid_thememofluid translate="title" module="mofluid_thememofluidmodern">
+                    <title>Theme Configuration</title>
+                    <sort_order>9</sort_order>
+                    <children>
+                        <mofluid_thememofluidmodern_form translate="title" module="mofluid_thememofluidmodern">
+                            <title>Modern</title>
+                            <sort_order>11</sort_order>
+                            <action>adminhtml/thememofluidmodern</action>
+                        </mofluid_thememofluidmodern_form>
+                    </children>
+                </mofluid_thememofluid>
+            </children>
+        </mofluid>
+    </menu>
+    <!--Access Control Settings-->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluid_thememofluidmodern">
+                        <title>Mofluid</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <mofluid_thememofluid translate="title" module="mofluid_thememofluidmodern">
+                                <title>Theme Configuration</title>
+                                <sort_order>9</sort_order>
+                                <children>
+                                    <mofluid_thememofluidmodern_form translate="title" module="mofluid_thememofluidmodern">
+                                        <title>Modern</title>
+                                        <sort_order>11</sort_order>
+                                    </mofluid_thememofluidmodern_form>
+                                </children>
+                            </mofluid_thememofluid>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

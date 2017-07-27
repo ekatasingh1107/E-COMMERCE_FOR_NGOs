@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mofluid translate="title" module="mofluid_paymentpaypal">
+            <title>Mofluid</title>
+            <sort_order>90</sort_order>
+            <children>
+                <mofluid_payment translate="title" module="mofluid_paymentpaypal">
+                    <title>Payment Configuration</title>
+                    <sort_order>10</sort_order>
+                    <children>
+                        <mofluid_payment_paypal_menu translate="title" module="mofluid_paymentpaypal">
+                            <title>Paypal</title>
+                            <sort_order>9</sort_order>
+                            <action>adminhtml/paymentpaypal</action>
+                            <disabled>1</disabled>
+                        </mofluid_payment_paypal_menu>
+                    </children>
+                </mofluid_payment>
+            </children>
+        </mofluid>
+    </menu>
+    <!--Access Control Settings-->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluid_paymentpaypal">
+                        <title>Mofluid</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <mofluid_payment translate="title" module="mofluid_paymentpaypal">
+                                <title>Payment Configuration</title>
+                                <sort_order>10</sort_order>
+                                <children>
+                                    <mofluid_payment_paypal_menu translate="title" module="mofluid_paymentpaypal">
+                                        <title>Paypal</title>
+                                        <sort_order>9</sort_order>
+                                        <disabled>1</disabled>
+                                    </mofluid_payment_paypal_menu>
+                                </children>
+                            </mofluid_payment>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

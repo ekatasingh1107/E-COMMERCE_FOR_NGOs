@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Adminmofluid>
+            <version>1.18.0</version>
+            <name>Mofluid</name>
+            <type>Free</type>
+        </Mofluid_Adminmofluid>
+    </modules>
+    <frontend>
+        <routers>
+            <adminmofluid>
+                <use>standard</use>
+                <args>
+                    <module>Mofluid_Adminmofluid</module>
+                    <frontName>adminmofluid</frontName>
+                </args>
+            </adminmofluid>
+        </routers>
+        <layout>  <!-- New Section Added -->
+            <updates>
+                <adminmofluid>
+                    <file>adminmofluid.xml</file> <!-- This is name of the layout file for this module -->
+                </adminmofluid>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <adminmofluid>
+                <class>Mofluid_Adminmofluid_Block</class>
+            </adminmofluid>
+        </blocks>
+        <helpers>
+            <adminmofluid>
+                <class>Mofluid_Adminmofluid_Helper</class>
+            </adminmofluid>
+        </helpers>
+        
+        <models>
+            <adminmofluid>
+                 <class>Mofluid_Adminmofluid_Model</class> <!-- Location of all model class files -->
+                 <resourceModel>adminmofluid_mysql4</resourceModel> <!-- Location of resource model -->
+            </adminmofluid>
+            <adminmofluid_mysql4>
+                 <class>Mofluid_Adminmofluid_Model_Mysql4</class>
+                 <entities>
+                      <mofluidresource>
+                          <table>mofluid_resource</table>  <!-- Actual table name in sql  -->
+                      </mofluidresource>
+		 </entities>
+            </adminmofluid_mysql4>
+       </models>
+       <resources>  <!-- These are resource setting giving access to module, read/write permission on database -->
+            <mofluid_adminmofluid_setup>
+                <setup>
+                    <module>Mofluid_Adminmofluid</module>
+                </setup>
+                <connection>
+                     <use>core_setup</use>
+                </connection>
+            </mofluid_adminmofluid_setup>
+            <mofluid_adminmofluid_write>
+                <connection>
+                     <use>core_write</use>
+                </connection>
+            </mofluid_adminmofluid_write>
+            <mofluid_adminmofluid_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_adminmofluid_read>
+      </resources>
+    </global>
+    <admin>
+        <routers>
+            <adminmofluid>
+                <use>admin</use>
+                <args>
+                    <module>Mofluid_Adminmofluid</module>
+                    <frontName>adminmofluid</frontName>
+                </args>
+            </adminmofluid>
+        </routers>
+    </admin>
+<adminhtml>
+        <menu>
+            <mofluid translate="title" module="adminmofluid">
+                <title>Mofluid</title> 
+                <sort_order>9999</sort_order>
+            </mofluid>
+           
+        </menu> 
+         <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="adminmofluid">
+                        <title>Mofluid</title>
+                        <sort_order>9999</sort_order>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    </adminhtml>
+    
+</config>

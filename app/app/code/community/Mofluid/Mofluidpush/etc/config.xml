@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Mofluidpush>
+            <version>1.17.0</version>
+        </Mofluid_Mofluidpush>
+    </modules>
+    <frontend>
+        <routers>
+            <mofluidpush>
+                <use>standard</use>
+                <args>
+                    <module>Mofluid_Mofluidpush</module>
+                    <frontName>mofluidpush</frontName>
+                </args>
+            </mofluidpush>
+        </routers>
+        <layout>  <!-- New Section Added -->
+            <updates>
+                <mofluidpush>
+                    <file>mofluidpush.xml</file> <!-- This is name of the layout file for this module -->
+                </mofluidpush>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <mofluidpush>
+                <class>Mofluid_Mofluidpush_Block</class>
+            </mofluidpush>
+        </blocks>
+        <helpers>
+            <mofluidpush>
+                <class>Mofluid_Mofluidpush_Helper</class>
+            </mofluidpush>
+        </helpers>
+        
+        <models>
+            <mofluidpush>
+                 <class>Mofluid_Mofluidpush_Model</class> <!-- Location of all model class files -->
+                 <resourceModel>mofluidpush_mysql4</resourceModel> <!-- Location of resource model -->
+            </mofluidpush>
+            <mofluidpush_mysql4>
+                 <class>Mofluid_Mofluidpush_Model_Mysql4</class>
+                 <entities>
+                      <mofluidpush>
+                          <table>mofluidpush</table>  <!-- Actual table name in sql  -->
+                      </mofluidpush>
+                      <mofluidpush_settings>
+                          <table>mofluidpush_settings</table>  <!-- Actual table name in sql  -->
+                      </mofluidpush_settings>
+                 </entities>
+            </mofluidpush_mysql4>
+       </models>
+       <resources>  <!-- These are resource setting giving access to module, read/write permission on database -->
+            <mofluidpush_setup>
+                <setup>
+                    <module>Mofluid_Mofluidpush</module>
+                </setup>
+                <connection>
+                     <use>core_setup</use>
+                </connection>
+            </mofluidpush_setup>
+            <mofluidpush_write>
+                <connection>
+                     <use>core_write</use>
+                </connection>
+            </mofluidpush_write>
+            <mofluidpush_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluidpush_read>
+      </resources>
+    </global>
+    <admin>
+        <routers>
+            <mofluidpush>
+                <use>admin</use>
+                <args>
+                    <module>Mofluid_Mofluidpush</module>
+                    <frontName>mofluidpush</frontName>
+                </args>
+            </mofluidpush>
+        </routers>
+    </admin>
+<adminhtml>
+
+
+<menu>
+            <mofluid translate="title" module="mofluidadmin">
+                <title>Mofluid</title> 
+                <sort_order>9999</sort_order>
+                <children>
+                    <mofluid_pushsettings module="mofluidpush">
+                        <title>Push Notification</title> 
+                        <action>mofluidpush/index/index</action>
+                    </mofluid_pushsettings>
+                   </children>
+            </mofluid>
+           
+        </menu> 
+         <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluidadmin">
+                        <title>Mofluid</title>
+                        <sort_order>9999</sort_order>
+                        <children>
+                            <mofluid_pushsettings translate="title" module="mofluidpush">
+                                <title>Push Notification</title>
+                                <sort_order>15</sort_order>
+                            </mofluid_pushsettings>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    </adminhtml>
+    
+</config>

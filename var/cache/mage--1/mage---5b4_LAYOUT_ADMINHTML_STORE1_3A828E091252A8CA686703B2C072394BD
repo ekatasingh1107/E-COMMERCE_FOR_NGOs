@@ -1,0 +1,279 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1473742827;s:6:"expire";d:9999999999;s:4:"tags";s:101:"5b4_DEFAULT,5b4_CATALOG_PRODUCT_EDIT,5b4_CATALOG_PRODUCT_SIMPLE,5b4_LAYOUT_GENERAL_CACHE_TAG,5b4_MAGE";}
+<head>
+   <title>Magento Admin</title>
+   <meta name="viewport" content="width=1024, initial-scale=1"/>
+   <link src="requirejs/require.js"/>
+   <css src="extjs/resources/css/ext-all.css"/>
+   <css src="extjs/resources/css/ytheme-magento.css"/>
+</head>
+<body>
+   <attribute name="id" value="html-body"/>
+   <block name="require.js" class="Magento\Backend\Block\Page\RequireJs" template="Magento_Backend::page/js/require_js.phtml"/>
+   <referenceContainer name="global.notices">
+      <block class="Magento\Backend\Block\Page\Notices" name="global_notices" as="global_notices" template="page/notices.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="header">
+      <block class="Magento\Backend\Block\Page\Header" name="logo" before="-">
+         <arguments>
+            <argument name="show_part" xsi:type="string">logo</argument>
+            <argument name="edition" translate="true" xsi:type="string">Community Edition</argument>
+            <argument name="logo_image_src" xsi:type="string">images/magento-icon.svg</argument>
+         </arguments>
+      </block>
+      <block class="Magento\Backend\Block\GlobalSearch" name="global.search" as="search" after="logo" acl="Magento_Backend::global_search"/>
+      <block class="Magento\Backend\Block\Page\Header" name="user" after="-">
+         <arguments>
+            <argument name="show_part" xsi:type="string">user</argument>
+         </arguments>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="page.menu">
+      <block class="Magento\Backend\Block\Menu" name="menu" as="menu" template="Magento_Backend::menu.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="page.breadcrumbs">
+      <block class="Magento\Backend\Block\Widget\Breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
+   </referenceContainer>
+   <referenceContainer name="page.formkey">
+      <block class="Magento\Backend\Block\Admin\Formkey" name="formkey" as="formkey" template="Magento_Backend::admin/formkey.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="main.top">
+      <block class="Magento\Theme\Block\Html\Title" name="page.title" template="title.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="page.messages">
+      <block class="Magento\Framework\View\Element\Messages" name="messages" as="messages"/>
+   </referenceContainer>
+   <referenceContainer name="page.main.actions">
+      <block class="Magento\Framework\View\Element\Template" name="page.actions.toolbar" template="Magento_Backend::pageactions.phtml" after="-"/>
+   </referenceContainer>
+   <referenceContainer name="footer">
+      <container name="legal" htmlTag="div" htmlClass="footer-legal">
+         <container name="legal.copyright" htmlTag="p" htmlClass="copyright col-m-6">
+            <block class="Magento\Backend\Block\Page\Copyright" name="copyright" as="copyright"/>
+         </container>
+         <container name="legal.system" htmlTag="div" htmlClass="footer-legal-system col-m-6">
+            <block class="Magento\Backend\Block\Page\Footer" name="version" as="version"/>
+            <block class="Magento\Framework\View\Element\Template" name="report" as="report" template="Magento_Backend::page/report.phtml">
+               <arguments>
+                  <argument name="bugreport_url" xsi:type="string">https://github.com/magento/magento2/issues</argument>
+               </arguments>
+            </block>
+         </container>
+      </container>
+   </referenceContainer>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\RequireJs\Block\Html\Head\Config" name="requirejs-config"/>
+      <block class="Magento\Translation\Block\Html\Head\Config" name="translate-config"/>
+      <block class="Magento\Translation\Block\Js" name="translate" template="Magento_Translation::translate.phtml"/>
+      <block class="Magento\Framework\View\Element\Js\Components" name="head.components" as="components" template="Magento_Backend::page/js/components.phtml"/>
+      <block class="Magento\Framework\View\Element\Html\Calendar" name="head.calendar" as="calendar" template="Magento_Backend::page/js/calendar.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="notifications">
+      <block class="Magento\AdminNotification\Block\System\Messages" name="system_messages" as="system_messages" before="-" template="Magento_AdminNotification::system/messages.phtml"/>
+      <block class="Magento\AdminNotification\Block\System\Messages\UnreadMessagePopup" name="unread_system_messages" as="unread_system_messages" after="system_messages" template="Magento_AdminNotification::system/messages/popup.phtml"/>
+      <block class="Magento\AdminNotification\Block\Window" name="notification_window" as="notification_window" acl="Magento_AdminNotification::show_toolbar" template="notification/window.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="header">
+      <block class="Magento\AdminNotification\Block\ToolbarEntry" name="notification.messages" before="user" template="toolbar_entry.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <block class="Magento\Framework\Pricing\Render" name="product.price.render.default">
+      <arguments>
+         <argument name="price_render_handle" xsi:type="string">catalog_product_prices</argument>
+         <argument name="use_link_for_as_low_as" xsi:type="boolean">true</argument>
+      </arguments>
+   </block>
+</body>
+<body>
+   <referenceContainer name="after.body.start">
+      <block class="Magento\Ui\Block\Logger" name="logger" template="Magento_Ui::logger.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <css src="css/styles-old.css"/>
+   <css src="css/styles.css"/>
+</head>
+<body>
+   <referenceContainer name="root">
+      <container name="menu.wrapper" before="-" htmlTag="div" htmlClass="menu-wrapper"/>
+   </referenceContainer>
+   <referenceContainer name="header" htmlClass="page-header row">
+      <container name="header.inner.left" before="-" htmlTag="div" htmlClass="page-header-hgroup col-l-8 col-m-6"/>
+      <container name="header.inner.right" after="header.inner.left" htmlTag="div" htmlClass="page-header-actions col-l-4 col-m-6"/>
+   </referenceContainer>
+   <move element="page.menu" destination="menu.wrapper"/>
+   <move element="logo" before="-" destination="menu.wrapper"/>
+   <move element="page.title" before="-" destination="header.inner.left"/>
+   <move element="user" before="-" destination="header.inner.right"/>
+   <move element="notification.messages" after="user" destination="header.inner.right"/>
+   <move element="global.search" after="notification.messages" destination="header.inner.right"/>
+</body>
+<head>
+   <link src="Magento_Backend::js/bootstrap/editor.js"/>
+   <css src="prototype/windows/themes/default.css"/>
+</head>
+<body/>
+<head>
+   <css src="jquery/fileUploader/css/jquery.fileupload-ui.css"/>
+   <css src="Magento_Catalog::catalog/category-selector.css"/>
+   <css src="Magento_Catalog::product/product.css"/>
+</head>
+<update handle="editor"/>
+<body>
+   <referenceContainer name="admin.scope.col.wrap" htmlClass="admin__old"/>
+   <referenceContainer name="content">
+      <block class="Magento\Catalog\Block\Adminhtml\Product\Edit" name="product_edit">
+         <container name="product-type-tabs" label="Tabs">
+            </container>
+      </block>
+      <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\AttributeSet" name="attribute-set-info" template="Magento_Catalog::catalog/product/edit/attribute_set.phtml"/>
+      <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\NewCategory" name="new-category" template="Magento_Catalog::catalog/product/edit/category/new/form.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="left">
+      <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\Tabs" name="product_tabs">
+         <arguments>
+            <argument name="panels_class" xsi:type="string">admin__scope-old</argument>
+         </arguments>
+         <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\ChildTab" name="product_tabs.child-tab" as="child-tab" template="Magento_Catalog::product/edit/tabs/child_tab.phtml"/>
+         <block class="Magento\Backend\Block\Widget\Tab" name="product_tabs.customer_options" as="customer_options">
+            <arguments>
+               <argument name="label" translate="true" xsi:type="string">Custom Options</argument>
+               <argument name="url" path="catalog/*/options" xsi:type="url">
+                  <param name="_current">1</param>
+               </argument>
+               <argument name="class" xsi:type="string">ajax</argument>
+            </arguments>
+         </block>
+         <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\Inventory" name="product_tabs.advanced-inventory" as="advanced-inventory">
+            <arguments>
+               <argument name="label" translate="true" xsi:type="string">Advanced Inventory</argument>
+               <argument name="group_code" xsi:type="string">advanced</argument>
+            </arguments>
+         </block>
+         <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\Tab\Alerts" name="product_tabs.product-alerts" as="product-alerts">
+            <arguments>
+               <argument name="label" translate="true" xsi:type="string">Product Alerts</argument>
+            </arguments>
+         </block>
+      </block>
+   </referenceContainer>
+   <referenceContainer name="js">
+      <block class="Magento\Catalog\Block\Adminhtml\Product\Edit\Js" name="catalog_product_js" template="catalog/product/js.phtml"/>
+      <block class="Magento\Framework\View\Element\Template" template="Magento_Catalog::catalog/wysiwyg/js.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceContainer name="js">
+      <block class="Magento\Framework\View\Element\Template" template="Magento_Bundle::product/stock/disabler.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="product_tabs">
+      <action method="addTab">
+         <argument name="name" xsi:type="string">google-experiment</argument>
+         <argument name="block" xsi:type="string">Magento\GoogleOptimizer\Block\Adminhtml\Catalog\Product\Edit\Tab\Googleoptimizer</argument>
+      </action>
+   </referenceBlock>
+</body>
+<body>
+   <referenceContainer name="js">
+      <block class="Magento\Framework\View\Element\Template" template="Magento_GroupedProduct::product/stock/disabler.phtml"/>
+   </referenceContainer>
+</body>
+<head>
+   <css src="Magento_ConfigurableProduct::product/product.css"/>
+</head>
+<body>
+   <referenceContainer name="js">
+      <block class="Magento\ConfigurableProduct\Block\Product\Configurable\AttributeSelector" template="product/configurable/affected-attribute-set-selector/js.phtml"/>
+      <block class="Magento\Framework\View\Element\Template" template="Magento_ConfigurableProduct::product/configurable/stock/disabler.phtml"/>
+   </referenceContainer>
+   <referenceContainer name="content">
+      <block class="Magento\Framework\View\Element\Template" name="affected-attribute-set-selector" template="Magento_ConfigurableProduct::product/configurable/affected-attribute-set-selector/form.phtml">
+         <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Edit\AttributeSet\Form" name="affected-attribute-set-form"/>
+      </block>
+   </referenceContainer>
+</body>
+<head>
+   <link src="Magento_ProductVideo::js/get-video-information.js"/>
+</head>
+<body>
+   <referenceContainer name="content">
+      <block class="Magento\ProductVideo\Block\Adminhtml\Product\Edit\NewVideo" name="new-video" template="Magento_ProductVideo::product/edit/slideout/form.phtml"/>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="product_tabs">
+      <block class="Magento\Review\Block\Adminhtml\Product\Edit\Tab" name="product.reviews">
+         <arguments>
+            <argument name="label" translate="true" xsi:type="string">Product Reviews</argument>
+            <argument name="url" path="review/product_reviews/grid" xsi:type="url">
+               <param name="_current">1</param>
+            </argument>
+            <argument name="class" xsi:type="string">ajax</argument>
+            <argument name="group_code" xsi:type="string">advanced</argument>
+         </arguments>
+      </block>
+      <action method="addTab">
+         <argument name="name" xsi:type="string">product-reviews</argument>
+         <argument name="block" xsi:type="string">product.reviews</argument>
+      </action>
+   </referenceBlock>
+</body>
+<update handle="catalog_product_new"/>
+<body>
+   <referenceBlock name="page.title">
+      <action method="setTitleClass">
+         <argument name="class" xsi:type="string">complex</argument>
+      </action>
+   </referenceBlock>
+   <referenceContainer name="page.main.actions">
+      <block class="Magento\Backend\Block\Store\Switcher" name="store_switcher">
+         <action method="setUseConfirm">
+            <argument name="params" xsi:type="string">1</argument>
+         </action>
+      </block>
+   </referenceContainer>
+</body>
+<body>
+   <referenceBlock name="product_tabs">
+      <block name="downloadable_items" class="Magento\Downloadable\Block\Adminhtml\Catalog\Product\Edit\Tab\Downloadable">
+         <block name="catalog.product.edit.tab.downloadable.links" class="Magento\Downloadable\Block\Adminhtml\Catalog\Product\Edit\Tab\Downloadable\Links"/>
+         <block class="Magento\Downloadable\Block\Adminhtml\Catalog\Product\Edit\Tab\Downloadable\Samples"/>
+      </block>
+      <action method="addTab">
+         <argument name="name" xsi:type="string">downloadable_items</argument>
+         <argument name="block" xsi:type="string">downloadable_items</argument>
+      </action>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="product_tabs">
+      <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Edit\Tab\Variations\Config" name="admin.product.edit.tab.super.config.grid.container">
+         <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Edit\Tab\Variations\Config\Matrix" template="Magento_ConfigurableProduct::catalog/product/edit/super/matrix.phtml" as="matrix">
+            <block class="Magento\Ui\Block\Component\StepsWizard" name="variation-steps-wizard">
+               <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Steps\SelectAttributes" name="step1" template="Magento_ConfigurableProduct::catalog/product/edit/attribute/steps/select_attributes.phtml">
+                  <uiComponent name="product_attributes_listing"/>
+               </block>
+               <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Steps\AttributeValues" name="step2" template="Magento_ConfigurableProduct::catalog/product/edit/attribute/steps/attributes_values.phtml"/>
+               <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Steps\Bulk" name="step3" template="Magento_ConfigurableProduct::catalog/product/edit/attribute/steps/bulk.phtml"/>
+               <block class="Magento\ConfigurableProduct\Block\Adminhtml\Product\Steps\Summary" name="step4" template="Magento_ConfigurableProduct::catalog/product/edit/attribute/steps/summary.phtml"/>
+            </block>
+         </block>
+      </block>
+      <action method="addTab">
+         <argument name="name" xsi:type="string">super_config</argument>
+         <argument name="block" xsi:type="string">admin.product.edit.tab.super.config.grid.container</argument>
+      </action>
+   </referenceBlock>
+</body>
+<body>
+   <referenceBlock name="step2">
+      <action method="setTemplate">
+         <argument name="template" xsi:type="string">Magento_Swatches::catalog/product/edit/attribute/steps/attributes_values.phtml</argument>
+      </action>
+   </referenceBlock>
+</body>
+<update handle="catalog_product_superconfig_config"/>

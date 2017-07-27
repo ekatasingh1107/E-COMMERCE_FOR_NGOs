@@ -1,0 +1,17 @@
+{
+  "name" : "templatemonster/login-popup",
+  "description": "Login Popup",
+  "type": "magento2-module",
+  "version": "1.0.0-beta",
+  "autoload": {
+    "psr-4": {
+      "TemplateMonster\\LoginPopup\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  },
+  "require": {
+    "magento/module-customer": "*"
+  }
+}

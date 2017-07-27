@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mofluid translate="title" module="mofluid_paymentauthorize">
+            <title>Mofluid</title>
+            <sort_order>90</sort_order>
+            <children>
+                <mofluid_payment translate="title" module="mofluid_paymentauthorize">
+                    <title>Payment Configuration</title>
+                    <sort_order>10</sort_order>
+                    <children>
+                        <mofluid_payment_authorize_menu translate="title" module="mofluid_paymentauthorize">
+                            <title>Authorize.Net</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/paymentauthorize</action>
+                            <disabled>1</disabled>
+                        </mofluid_payment_authorize_menu>
+                    </children>
+                </mofluid_payment>
+            </children>
+        </mofluid>
+    </menu>
+    <!--Access Control Settings-->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluid_paymentauthorize">
+                        <title>Mofluid</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <mofluid_payment translate="title" module="mofluid_paymentauthorize">
+                                <title>Payment Configuration</title>
+                                <sort_order>10</sort_order>
+                                <children>
+                                    <mofluid_payment_authorize_menu translate="title" module="mofluid_paymentauthorize">
+                                        <title>Authorize.Net</title>
+                                        <sort_order>10</sort_order>
+                                        <disabled>1</disabled>
+                                    </mofluid_payment_authorize_menu>
+                                </children>
+                            </mofluid_payment>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

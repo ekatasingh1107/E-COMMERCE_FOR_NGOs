@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Thememofluidelegant>
+            <version>1.17.0</version>
+        </Mofluid_Thememofluidelegant>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_thememofluidelegant>
+                <class>Mofluid_Thememofluidelegant_Block</class>
+            </mofluid_thememofluidelegant>
+        </blocks>
+
+        <helpers>
+            <mofluid_thememofluidelegant>
+                <class>Mofluid_Thememofluidelegant_Helper</class>
+            </mofluid_thememofluidelegant>
+        </helpers>
+
+        <models>
+            <mofluid_thememofluidelegant>
+                <class>Mofluid_Thememofluidelegant_Model</class>
+                <resourceModel>mofluid_thememofluidelegant_mysql4</resourceModel>
+            </mofluid_thememofluidelegant>
+            <mofluid_thememofluidelegant_mysql4>
+                <class>Mofluid_Thememofluidelegant_Model_Mysql4</class>
+                <entities>
+                    <mofluid_themes_core>
+                        <table>mofluid_themes</table>
+                    </mofluid_themes_core>
+
+                    <mofluid_themes_messages>
+                        <table>mofluid_themes_messages</table>
+                    </mofluid_themes_messages>
+
+
+                    <mofluid_themes_colors>
+                        <table>mofluid_themes_colors</table>
+                    </mofluid_themes_colors>
+
+                    <mofluid_themes_images>
+                        <table>mofluid_themes_images</table>
+                    </mofluid_themes_images>
+
+
+                </entities>
+            </mofluid_thememofluidelegant_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_thememofluidelegant_setup>
+                <setup>
+                    <module>Mofluid_Thememofluidelegant</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_thememofluidelegant_setup>
+            <mofluid_thememofluidelegant_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_thememofluidelegant_write>
+            <mofluid_thememofluidelegant_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_thememofluidelegant_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_thememofluidelegant after="Mage_Adminhtml">Mofluid_Thememofluidelegant_Adminhtml</mofluid_thememofluidelegant>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_thememofluidelegant>
+                    <file>mofluid_thememofluidelegant.xml</file>
+                </mofluid_thememofluidelegant>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Thememofluidelegant>
+                    <files>
+                        <default>Mofluid_Thememofluidelegant.csv</default>
+                    </files>
+                </Mofluid_Thememofluidelegant>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_thememofluidelegant>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_thememofluidelegant>
+    </default>
+
+
+
+
+
+<sections>
+    <general>
+      <groups>
+        <samples translate="label comment" module="thememofluidelegant">
+          <label>Sample Product Amount Setting</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>150</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields> 
+            <amountlimit translate="label">
+              <label>Minimum Amount</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </amountlimit>
+           
+          </fields>
+        </samples>
+      </groups>
+    </general>
+  </sections>
+</config>

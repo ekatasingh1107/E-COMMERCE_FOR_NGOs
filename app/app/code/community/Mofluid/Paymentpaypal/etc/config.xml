@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Paymentpaypal>
+            <version>1.17.0</version>
+        </Mofluid_Paymentpaypal>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_paymentpaypal>
+                <class>Mofluid_Paymentpaypal_Block</class>
+            </mofluid_paymentpaypal>
+        </blocks>
+
+        <helpers>
+            <mofluid_paymentpaypal>
+                <class>Mofluid_Paymentpaypal_Helper</class>
+            </mofluid_paymentpaypal>
+        </helpers>
+
+        <models>
+            <mofluid_paymentpaypal>
+                <class>Mofluid_Paymentpaypal_Model</class>
+                <resourceModel>mofluid_paymentpaypal_mysql4</resourceModel>
+            </mofluid_paymentpaypal>
+            <mofluid_paymentpaypal_mysql4>
+                <class>Mofluid_Paymentpaypal_Model_Mysql4</class>
+                <entities>
+                    <payment>
+                        <table>mofluidpayment</table>
+                    </payment>
+                </entities>
+            </mofluid_paymentpaypal_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_paymentpaypal_setup>
+                <setup>
+                    <module>Mofluid_Paymentpaypal</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_paymentpaypal_setup>
+            <mofluid_paymentpaypal_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_paymentpaypal_write>
+            <mofluid_paymentpaypal_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_paymentpaypal_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_paymentpaypal after="Mage_Adminhtml">Mofluid_Paymentpaypal_Adminhtml</mofluid_paymentpaypal>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_paymentpaypal>
+                    <file>mofluid_paymentpaypal.xml</file>
+                </mofluid_paymentpaypal>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Paymentpaypal>
+                    <files>
+                        <default>Mofluid_Paymentpaypal.csv</default>
+                    </files>
+                </Mofluid_Paymentpaypal>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_paymentpaypal>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_paymentpaypal>
+    </default>
+</config>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Mofluidapi>
+            <version>1.15.0</version>    <!-- Version of module -->
+        </Mofluid_Mofluidapi>
+    </modules>
+    <frontend>
+        <routers>
+            <mofluidapi>
+                <use>standard</use>
+                <args>
+                    <module>Mofluid_Mofluidapi</module>
+                    <frontName>mofluid</frontName>  <!-- This is the URL
+ of the module. i.e www.yourmagento.com/index.php/test will be the url of your module. -->
+                </args>
+            </mofluidapi>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <mofluidapi>
+                <class>Mofluid_Mofluidapi_Block</class>  <!-- Path of the
+ Block Folder, where all php files are located related to view -->
+            </mofluidapi>
+        </blocks>
+        <helpers>
+            <mofluidapi>
+                <class>Mofluid_Mofluidapi_Helper</class> 
+<!-- Path of Helper Files -->
+            </mofluidapi>
+        </helpers>
+        <template>
+            <email>
+                <mofluid_password>
+                    <label>Mofluid Plugin Password</label>
+                    <file>mofluid/mofluid_password.html</file> 
+                    <type>html</type>
+                </mofluid_password>
+            </email>
+        </template>
+    </global>
+</config>

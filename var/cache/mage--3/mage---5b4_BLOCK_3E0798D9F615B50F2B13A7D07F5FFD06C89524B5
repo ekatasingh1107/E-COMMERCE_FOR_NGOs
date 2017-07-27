@@ -1,0 +1,449 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1473730181;s:6:"expire";i:1473730181;s:4:"tags";s:43:"5b4_CATALOG_PRODUCT,5b4_BLOCK_HTML,5b4_MAGE";}
+
+    <div class="block widget block-new-products grid">
+        <div class="container">
+            <div class="block-title">
+                <strong role="heading" aria-level="2">New Products</strong>
+            </div>
+            <div class="block-content">
+                <!-- new_products_content_widget_grid-->                <div class="products-grid grid">
+                    <ol class="product-items widget-new-grid">
+                                                                            <li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/wooden-banglestand.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/w/o/wooden-bangle-stand-1307747.jpg"
+             width="500"
+             height="500"
+             alt="WOODEN BANGLESTAND"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="WOODEN BANGLESTAND"
+                                           href="http://localhost/fullpackage/wooden-banglestand.html"
+                                           class="product-item-link">
+                                            WOODEN BANGLESTAND                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="11">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="old-price-11-widget-new-grid"                data-price-amount="702"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹702.00</span>    </span>
+        </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/11\/","data":{"product":"11","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"11","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"11","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                                                                                </li><li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/royal-earthernware-kettle.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/d/o/download.jpg"
+             width="500"
+             height="500"
+             alt="ROYAL EARTHERNWARE KETTLE"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="ROYAL EARTHERNWARE KETTLE"
+                                           href="http://localhost/fullpackage/royal-earthernware-kettle.html"
+                                           class="product-item-link">
+                                            ROYAL EARTHERNWARE KETTLE                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="4">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-4-widget-new-grid"                data-price-amount="64"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹64.00</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-4-widget-new-grid"                data-price-amount="7600"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹7,600.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/4\/","data":{"product":"4","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"4","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"4","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                                                                                </li><li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/stoneware-vase.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/e/a/earthenware-pottery-127465.jpg"
+             width="500"
+             height="500"
+             alt="Stoneware Vase"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="Stoneware Vase"
+                                           href="http://localhost/fullpackage/stoneware-vase.html"
+                                           class="product-item-link">
+                                            Stoneware Vase                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="2">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-2-widget-new-grid"                data-price-amount="19.99"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹19.99</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-2-widget-new-grid"                data-price-amount="2400"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹2,400.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/2\/","data":{"product":"2","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"2","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"2","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                                                                                </li><li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/black-stone-necklace.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/2/0/20141201_162123.jpg"
+             width="500"
+             height="500"
+             alt="BLACK STONE NECKLACE"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="BLACK STONE NECKLACE"
+                                           href="http://localhost/fullpackage/black-stone-necklace.html"
+                                           class="product-item-link">
+                                            BLACK STONE NECKLACE                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="23">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-23-widget-new-grid"                data-price-amount="25.99"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹25.99</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-23-widget-new-grid"                data-price-amount="300"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹300.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/23\/","data":{"product":"23","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"23","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"23","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                                                                                </li><li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/classic-earthernware-pot.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/x/3/x354-q80.jpg"
+             width="500"
+             height="500"
+             alt="CLASSIC EARTHERNWARE POT"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="CLASSIC EARTHERNWARE POT"
+                                           href="http://localhost/fullpackage/classic-earthernware-pot.html"
+                                           class="product-item-link">
+                                            CLASSIC EARTHERNWARE POT                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="5">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-5-widget-new-grid"                data-price-amount="99.99"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹99.99</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-5-widget-new-grid"                data-price-amount="1150"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹1,150.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/5\/","data":{"product":"5","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"5","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"5","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                                                                                </li><li class="product-item">                            <div class="product-item-info">
+                                <a href="http://localhost/fullpackage/embroidered-flower-necklace.html" class="product-item-photo">
+                                    
+<span class="product-image-container"
+      style="width:500px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 100%;">
+        <img class="product-image-photo"
+                          src="http://localhost/fullpackage/pub/media/catalog/product/cache/1/small_image/500x500/beff4985b56e3afdbeabfc89641a4582/2/9/29.jpg"
+             width="500"
+             height="500"
+             alt="EMBROIDERED FLOWER NECKLACE"/></span>
+</span>
+                                </a>
+                                <div class="product-item-details">
+                                    <strong class="product-item-name">
+                                        <a title="EMBROIDERED FLOWER NECKLACE"
+                                           href="http://localhost/fullpackage/embroidered-flower-necklace.html"
+                                           class="product-item-link">
+                                            EMBROIDERED FLOWER NECKLACE                                        </a>
+                                    </strong>
+                                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="21">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-21-widget-new-grid"                data-price-amount="1999.99"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹1,999.99</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-21-widget-new-grid"                data-price-amount="2900"
+        data-price-type="oldPrice"
+        class="price-wrapper "
+        >
+        <span class="price">₹2,900.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                                
+                                                                            <div class="product-item-actions">
+                                                                                            <div class="actions-primary">
+                                                                                                                                                                                                                                    <button class="action tocart primary"
+                                                                    data-post='{"action":"http:\/\/localhost\/fullpackage\/checkout\/cart\/add\/uenc\/aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,\/product\/21\/","data":{"product":"21","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                                    type="button" title="Add to Cart">
+                                                                <span>+ Add to Cart</span>
+                                                            </button>
+                                                                                                                                                            </div>
+                                                                                                                                        <div class="actions-secondary" data-role="add-to-links">
+                                                                                                            <a href="#"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/wishlist\/index\/add\/","data":{"product":"21","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           class="action towishlist" data-action="add-to-wishlist"
+                                                           title="Add to Wish List">
+                                                            <span>Add to Wish List</span>
+                                                        </a>
+                                                                                                                                                                                                                        <a href="#" class="action tocompare"
+                                                           data-post='{"action":"http:\/\/localhost\/fullpackage\/catalog\/product_compare\/add\/","data":{"product":"21","uenc":"aHR0cDovL2xvY2FsaG9zdC9mdWxscGFja2FnZS8,"}}'
+                                                           title="Add to Compare">
+                                                            <span>Add to Compare</span>
+                                                        </a>
+                                                                                                    </div>
+                                                                                    </div>
+                                                                    </div>
+                            </div>
+                            </li>                                            </ol>
+                </div>
+                            </div>
+        </div>
+    </div>

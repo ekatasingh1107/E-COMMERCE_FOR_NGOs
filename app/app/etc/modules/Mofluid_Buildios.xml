@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Buildios>
+            <active>true</active>
+            <codePool>community</codePool>
+            </Mofluid_Buildios>
+    </modules>
+</config>

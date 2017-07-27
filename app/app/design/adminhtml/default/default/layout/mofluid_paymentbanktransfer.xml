@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+
+    <adminhtml_paymentbanktransfer_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_paymentbanktransfer/adminhtml_form_edit" name="paymentbanktransfer"/>
+        </reference>
+        <reference name="left">
+            <block type="mofluid_paymentbanktransfer/adminhtml_form_edit_tabs" name="paymentbanktransfer_tabs"/>
+        </reference>
+    </adminhtml_paymentbanktransfer_index>
+
+</layout>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+
+    <adminhtml_paymentauthorize_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_paymentauthorize/adminhtml_form_edit" name="paymentauthorize"/>
+        </reference>
+        <reference name="left">
+            <block type="mofluid_paymentauthorize/adminhtml_form_edit_tabs" name="paymentauthorize_tabs"/>
+        </reference>
+    </adminhtml_paymentauthorize_index>
+
+</layout>

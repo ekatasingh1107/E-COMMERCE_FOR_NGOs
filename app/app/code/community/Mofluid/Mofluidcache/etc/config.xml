@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Mofluidcache>
+            <version>1.17.0</version>
+        </Mofluid_Mofluidcache>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_mofluidcache>
+                <class>Mofluid_Mofluidcache_Block</class>
+            </mofluid_mofluidcache>
+        </blocks>
+
+        <helpers>
+            <mofluid_mofluidcache>
+                <class>Mofluid_Mofluidcache_Helper</class>
+            </mofluid_mofluidcache>
+        </helpers>
+
+        <models>
+            <mofluid_mofluidcache>
+                <class>Mofluid_Mofluidcache_Model</class>
+                <resourceModel>mofluid_mofluidcache_mysql4</resourceModel>
+            </mofluid_mofluidcache>
+            <mofluid_mofluidcache_mysql4>
+                <class>Mofluid_Mofluidcache_Model_Mysql4</class>
+                <entities>
+                    <mofluidcache>
+                        <table>mofluid_mofluidcache</table>
+                    </mofluidcache>
+
+
+
+                </entities>
+            </mofluid_mofluidcache_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_mofluidcache_setup>
+                <setup>
+                    <module>Mofluid_Mofluidcache</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_mofluidcache_setup>
+            <mofluid_mofluidcache_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_mofluidcache_write>
+            <mofluid_mofluidcache_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_mofluidcache_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_mofluidcache after="Mage_Adminhtml">Mofluid_Mofluidcache_Adminhtml</mofluid_mofluidcache>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_mofluidcache>
+                    <file>mofluid_mofluidcache.xml</file>
+                </mofluid_mofluidcache>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Mofluidcache>
+                    <files>
+                        <default>Mofluid_Mofluidcache.csv</default>
+                    </files>
+                </Mofluid_Mofluidcache>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    
+</config>

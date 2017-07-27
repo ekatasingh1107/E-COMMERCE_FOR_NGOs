@@ -1,0 +1,18 @@
+a:4:{i:0;s:296:"Please upgrade your database: Run "bin/magento setup:upgrade" from the Magento root directory. 
+The following modules are outdated:
+Ibnab_ChangeAttributeSet schema: current version - none, required version - 1.0.0
+Ibnab_ChangeAttributeSet data: current version - none, required version - 1.0.0";i:1;s:2638:"#0 [internal function]: Magento\Framework\Module\Plugin\DbStatusValidator->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#1 C:\wamp\www\fullpackage\vendor\magento\framework\Interception\Chain\Chain.php(68): call_user_func_array(Array, Array)
+#2 C:\wamp\www\fullpackage\vendor\magento\framework\Interception\Chain\Chain.php(63): Magento\Framework\Interception\Chain\Chain->invokeNext('Magento\\Framewo...', 'dispatch', Object(Magento\Framework\App\FrontController\Interceptor), Array, 'front-controlle...')
+#3 C:\wamp\www\fullpackage\vendor\magento\module-page-cache\Model\App\FrontController\BuiltinPlugin.php(73): Magento\Framework\Interception\Chain\Chain->Magento\Framework\Interception\Chain\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 [internal function]: Magento\PageCache\Model\App\FrontController\BuiltinPlugin->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#5 C:\wamp\www\fullpackage\vendor\magento\framework\Interception\Chain\Chain.php(68): call_user_func_array(Array, Array)
+#6 C:\wamp\www\fullpackage\vendor\magento\framework\Interception\Interceptor.php(136): Magento\Framework\Interception\Chain\Chain->invokeNext('Magento\\Framewo...', 'dispatch', Object(Magento\Framework\App\FrontController\Interceptor), Array, 'front-controlle...')
+#7 C:\wamp\www\fullpackage\vendor\magento\module-page-cache\Model\App\FrontController\VarnishPlugin.php(55): Magento\Framework\App\FrontController\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#8 [internal function]: Magento\PageCache\Model\App\FrontController\VarnishPlugin->aroundDispatch(Object(Magento\Framework\App\FrontController\Interceptor), Object(Closure), Object(Magento\Framework\App\Request\Http))
+#9 C:\wamp\www\fullpackage\vendor\magento\framework\Interception\Interceptor.php(141): call_user_func_array(Array, Array)
+#10 C:\wamp\www\fullpackage\var\generation\Magento\Framework\App\FrontController\Interceptor.php(26): Magento\Framework\App\FrontController\Interceptor->___callPlugins('dispatch', Array, Array)
+#11 C:\wamp\www\fullpackage\vendor\magento\framework\App\Http.php(115): Magento\Framework\App\FrontController\Interceptor->dispatch(Object(Magento\Framework\App\Request\Http))
+#12 C:\wamp\www\fullpackage\vendor\magento\framework\App\Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#13 C:\wamp\www\fullpackage\index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#14 {main}";s:3:"url";s:18:"/FULLPACKAGE/ADMIN";s:11:"script_name";s:22:"/fullpackage/index.php";}

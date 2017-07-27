@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Paymentbanktransfer>
+            <version>1.17.0</version>
+        </Mofluid_Paymentbanktransfer>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_paymentbanktransfer>
+                <class>Mofluid_Paymentbanktransfer_Block</class>
+            </mofluid_paymentbanktransfer>
+        </blocks>
+
+        <helpers>
+            <mofluid_paymentbanktransfer>
+                <class>Mofluid_Paymentbanktransfer_Helper</class>
+            </mofluid_paymentbanktransfer>
+        </helpers>
+
+        <models>
+            <mofluid_paymentbanktransfer>
+                <class>Mofluid_Paymentbanktransfer_Model</class>
+                <resourceModel>mofluid_paymentbanktransfer_mysql4</resourceModel>
+            </mofluid_paymentbanktransfer>
+            <mofluid_paymentbanktransfer_mysql4>
+                <class>Mofluid_Paymentbanktransfer_Model_Mysql4</class>
+                <entities>
+                    <payment>
+                        <table>mofluidpayment</table>
+                    </payment>
+                </entities>
+            </mofluid_paymentbanktransfer_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_paymentbanktransfer_setup>
+                <setup>
+                    <module>Mofluid_Paymentbanktransfer</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_paymentbanktransfer_setup>
+            <mofluid_paymentbanktransfer_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_paymentbanktransfer_write>
+            <mofluid_paymentbanktransfer_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_paymentbanktransfer_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_paymentbanktransfer after="Mage_Adminhtml">Mofluid_Paymentbanktransfer_Adminhtml</mofluid_paymentbanktransfer>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_paymentbanktransfer>
+                    <file>mofluid_paymentbanktransfer.xml</file>
+                </mofluid_paymentbanktransfer>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Paymentbanktransfer>
+                    <files>
+                        <default>Mofluid_Paymentbanktransfer.csv</default>
+                    </files>
+                </Mofluid_Paymentbanktransfer>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_paymentbanktransfer>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_paymentbanktransfer>
+    </default>
+</config>

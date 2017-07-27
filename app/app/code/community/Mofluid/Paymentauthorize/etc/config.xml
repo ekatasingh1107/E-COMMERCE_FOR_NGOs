@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Paymentauthorize>
+            <version>1.17.0</version>
+        </Mofluid_Paymentauthorize>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_paymentauthorize>
+                <class>Mofluid_Paymentauthorize_Block</class>
+            </mofluid_paymentauthorize>
+        </blocks>
+
+        <helpers>
+            <mofluid_paymentauthorize>
+                <class>Mofluid_Paymentauthorize_Helper</class>
+            </mofluid_paymentauthorize>
+        </helpers>
+
+        <models>
+            <mofluid_paymentauthorize>
+                <class>Mofluid_Paymentauthorize_Model</class>
+                <resourceModel>mofluid_paymentauthorize_mysql4</resourceModel>
+            </mofluid_paymentauthorize>
+            <mofluid_paymentauthorize_mysql4>
+                <class>Mofluid_Paymentauthorize_Model_Mysql4</class>
+                <entities>
+                    <payment>
+                        <table>mofluidpayment</table>
+                    </payment>
+                </entities>
+            </mofluid_paymentauthorize_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_paymentauthorize_setup>
+                <setup>
+                    <module>Mofluid_Paymentauthorize</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_paymentauthorize_setup>
+            <mofluid_paymentauthorize_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_paymentauthorize_write>
+            <mofluid_paymentauthorize_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_paymentauthorize_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_paymentauthorize after="Mage_Adminhtml">Mofluid_Paymentauthorize_Adminhtml</mofluid_paymentauthorize>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_paymentauthorize>
+                    <file>mofluid_paymentauthorize.xml</file>
+                </mofluid_paymentauthorize>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Paymentauthorize>
+                    <files>
+                        <default>Mofluid_Paymentauthorize.csv</default>
+                    </files>
+                </Mofluid_Paymentauthorize>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_paymentauthorize>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_paymentauthorize>
+    </default>
+</config>

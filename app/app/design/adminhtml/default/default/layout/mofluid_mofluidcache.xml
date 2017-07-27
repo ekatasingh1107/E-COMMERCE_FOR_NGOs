@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_mofluidcache_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_mofluidcache/adminhtml_form_edit" name="mofluidcache"/>
+        </reference>
+        <reference name="left">
+            <block type="mofluid_mofluidcache/adminhtml_form_edit_tabs" name="mofluidcache_tabs"/>
+        </reference>
+    </adminhtml_mofluidcache_index>
+</layout>

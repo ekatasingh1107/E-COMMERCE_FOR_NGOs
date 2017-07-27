@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Buildios>
+            <version>1.18.0</version>
+        </Mofluid_Buildios>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_buildios>
+                <class>Mofluid_Buildios_Block</class>
+            </mofluid_buildios>
+        </blocks>
+
+        <helpers>
+            <mofluid_buildios>
+                <class>Mofluid_Buildios_Helper</class>
+            </mofluid_buildios>
+        </helpers>
+
+        <models>
+            <mofluid_buildios>
+                <class>Mofluid_Buildios_Model</class>
+                <resourceModel>mofluid_buildios_mysql4</resourceModel>
+            </mofluid_buildios>
+            <mofluid_buildios_mysql4>
+                <class>Mofluid_Buildios_Model_Mysql4</class>
+                <entities>
+                    <assets>
+                        <table>mofluid_build_assets</table>
+                    </assets>
+
+                    <accounts>
+                        <table>mofluid_build_accounts</table>
+                    </accounts>
+                    <buildconfig>
+                        <table>mofluid_build_config</table>
+                    </buildconfig>
+
+
+
+                </entities>
+            </mofluid_buildios_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_buildios_setup>
+                <setup>
+                    <module>Mofluid_Buildios</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_buildios_setup>
+            <mofluid_buildios_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_buildios_write>
+            <mofluid_buildios_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_buildios_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_buildios after="Mage_Adminhtml">Mofluid_Buildios_Adminhtml</mofluid_buildios>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_buildios>
+                    <file>mofluid_buildios.xml</file>
+                </mofluid_buildios>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Buildios>
+                    <files>
+                        <default>Mofluid_Buildios.csv</default>
+                    </files>
+                </Mofluid_Buildios>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    
+</config>

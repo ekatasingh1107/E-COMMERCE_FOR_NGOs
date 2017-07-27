@@ -1,0 +1,78 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Customer login form pop-up template
+ *
+ * @see \Magento\Customer\Block\Form\Login
+ * @var $block \Magento\Customer\Block\Form\Login
+ */
+?>
+<div class="block block-customer-login-popup login-block active">
+    <div class="block-title">
+        <strong id="block-customer-login-popup-heading" role="heading" aria-level="2"><?php echo __('Login Form') ?></strong>
+    </div>
+    <div class="block-content" aria-labelledby="block-customer-login-popup-heading">
+        <form class="form form-login-popup"
+              action="<?php echo $block->getPostActionUrl() ?>"
+              method="post"
+              id="login-form-popup"
+              data-mage-init='{"validation":{}}'>
+            <?php echo $block->getBlockHtml('formkey'); ?>
+            <fieldset class="fieldset login" data-hasrequired="<?php echo __('* Required Fields') ?>">
+                <div class="field email required">
+                    <div class="control">
+                        <input name="login[username]"
+                               placeholder="Email:"
+                               value="<?php echo $block->escapeHtml($block->getUsername()) ?>"
+                               id="email"
+                               type="email"
+                               class="input-text"
+                               title="<?php echo __('Email') ?>"
+                               data-validate="{required:true, 'validate-email':true}">
+                    </div>
+                </div>
+                <div class="field password required">
+                    <div class="control">
+                        <input name="login[password]"
+                               placeholder="Password:"
+                               type="password"
+                               class="input-text"
+                               id="pass"
+                               title="<?php echo __('Password') ?>"
+                               data-validate="{required:true, 'validate-password':true}"
+                               autocomplete="off">
+                    </div>
+                </div>
+                <?php echo $block->getChildHtml('popup_persistent_remember_me') ?>
+                <div class="actions-toolbar">
+                    <div class="primary">
+                        <button type="submit" class="action login primary" name="send" id="send2">
+                            <span><?php echo __('Sign in') ?></span>
+                        </button>
+                    </div>
+                    <ul class="secondary">
+                        <li><a class="action remind-username" href="<?php echo $block->getForgotPasswordUrl() ?>">
+                                <?php echo __('Forgot Your Username?') ?>
+                            </a></li>
+                        <li><a class="action remind-password" href="<?php echo $block->getForgotPasswordUrl() ?>">
+                                <?php echo __('Forgot Your Password?') ?>
+                            </a></li>
+                        <li>
+                            <button class="action login-switcher">
+                                <?php echo __('Create an Account') ?>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

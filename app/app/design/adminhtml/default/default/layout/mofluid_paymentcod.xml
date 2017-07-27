@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+
+    <adminhtml_paymentcod_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_paymentcod/adminhtml_form_edit" name="paymentcod"/>
+        </reference>
+        <reference name="left">
+            <block type="mofluid_paymentcod/adminhtml_form_edit_tabs" name="paymentcod_tabs"/>
+        </reference> 
+    </adminhtml_paymentcod_index>
+
+</layout>

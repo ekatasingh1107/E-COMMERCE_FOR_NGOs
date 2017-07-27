@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <adminhtml_thememofluidmodern_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="mofluid_thememofluidmodern/adminhtml_form_edit" name="thememofluidmodern"/>
+            <!--block type="mofluid_thememofluidmodern/adminhtml_grid" name="grid" /-->
+        </reference>
+        <reference name="left">
+            <block type="mofluid_thememofluidmodern/adminhtml_form_edit_tabs" name="thememofluidmodern_tabs"/>
+            
+        </reference>
+    </adminhtml_thememofluidmodern_index>
+<default>
+    <reference name="head">
+        <action method="addJs"><script>mofluid/js/jscolor.js</script></action>
+    </reference>
+</default>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Adminmofluid>
+            <active>true</active>
+            <codePool>community</codePool>
+            </Mofluid_Adminmofluid>
+    </modules>
+</config>

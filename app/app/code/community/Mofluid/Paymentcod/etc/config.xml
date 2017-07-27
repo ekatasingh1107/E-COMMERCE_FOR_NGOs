@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Paymentcod>
+            <version>1.17.0</version>
+        </Mofluid_Paymentcod>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_paymentcod>
+                <class>Mofluid_Paymentcod_Block</class>
+            </mofluid_paymentcod>
+        </blocks>
+
+        <helpers>
+            <mofluid_paymentcod>
+                <class>Mofluid_Paymentcod_Helper</class>
+            </mofluid_paymentcod>
+        </helpers>
+
+        <models>
+            <mofluid_paymentcod>
+                <class>Mofluid_Paymentcod_Model</class>
+                <resourceModel>mofluid_paymentcod_mysql4</resourceModel>
+            </mofluid_paymentcod>
+            <mofluid_paymentcod_mysql4>
+                <class>Mofluid_Paymentcod_Model_Mysql4</class>
+                <entities>
+                    <payment>
+                        <table>mofluidpayment</table>
+                    </payment>
+                </entities>
+            </mofluid_paymentcod_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_paymentcod_setup>
+                <setup>
+                    <module>Mofluid_Paymentcod</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_paymentcod_setup>
+            <mofluid_paymentcod_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_paymentcod_write>
+            <mofluid_paymentcod_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_paymentcod_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_paymentcod after="Mage_Adminhtml">Mofluid_Paymentcod_Adminhtml</mofluid_paymentcod>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_paymentcod>
+                    <file>mofluid_paymentcod.xml</file>
+                </mofluid_paymentcod>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Paymentcod>
+                    <files>
+                        <default>Mofluid_Paymentcod.csv</default>
+                    </files>
+                </Mofluid_Paymentcod>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <mofluid_paymentcod>
+            <general>
+                <default_sort_by><![CDATA[position]]></default_sort_by>
+            </general>
+        </mofluid_paymentcod>
+    </default>
+</config>

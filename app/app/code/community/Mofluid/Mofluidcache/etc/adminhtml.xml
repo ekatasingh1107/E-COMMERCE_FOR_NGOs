@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <mofluid translate="title" module="mofluid_mofluidcache">
+            <title>Mofluid</title>
+            <sort_order>90</sort_order>
+            <children>
+                <mofluid_mofluidcachemm translate="title" module="mofluid_mofluidcache">
+                    <title>Mofluid Cache</title>
+                    <sort_order>9999</sort_order>
+                    <children>
+                        <mofluid_mofluidcache_form translate="title" module="mofluid_mofluidcache">
+                            <title>Mofluid Cache Settings</title>
+                            <sort_order>25</sort_order>
+                            <action>adminhtml/mofluidcache</action>
+                        </mofluid_mofluidcache_form>
+                    </children>
+                </mofluid_mofluidcachemm>
+            </children>
+        </mofluid>
+    </menu>
+    <!--Access Control Settings-->
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <mofluid translate="title" module="mofluid_mofluidcache">
+                        <title>Mofluid</title>
+                        <sort_order>90</sort_order>
+                        <children>
+                            <mofluid_mofluidcachemm translate="title" module="mofluid_mofluidcache">
+                                <title>Mofluid Cache</title>
+                                <sort_order>99999</sort_order>
+                                <children>
+                                    <mofluid_mofluidcache_form translate="title" module="mofluid_mofluidcache">
+                                        <title>Mofluid Cache Settings</title>
+                                        <sort_order>25</sort_order>
+                                    </mofluid_mofluidcache_form>
+                                </children>
+                            </mofluid_mofluidcachemm>
+                        </children>
+                    </mofluid>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

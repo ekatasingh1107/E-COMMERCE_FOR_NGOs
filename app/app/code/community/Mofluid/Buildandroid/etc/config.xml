@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mofluid_Buildandroid>
+            <version>1.18.0</version>
+        </Mofluid_Buildandroid>
+    </modules>
+
+    <global>
+        <blocks>
+            <mofluid_buildandroid>
+                <class>Mofluid_Buildandroid_Block</class>
+            </mofluid_buildandroid>
+        </blocks>
+
+        <helpers>
+            <mofluid_buildandroid>
+                <class>Mofluid_Buildandroid_Helper</class>
+            </mofluid_buildandroid>
+        </helpers>
+
+        <models>
+            <mofluid_buildandroid>
+                <class>Mofluid_Buildandroid_Model</class>
+                <resourceModel>mofluid_buildandroid_mysql4</resourceModel>
+            </mofluid_buildandroid>
+            <mofluid_buildandroid_mysql4>
+                <class>Mofluid_Buildandroid_Model_Mysql4</class>
+                <entities>
+                    <assets>
+                        <table>mofluid_build_assets</table>
+                    </assets>
+
+                    <accounts>
+                        <table>mofluid_build_accounts</table>
+                    </accounts>
+                    <buildconfig>
+                        <table>mofluid_build_config</table>
+                    </buildconfig>
+
+
+
+                </entities>
+            </mofluid_buildandroid_mysql4>
+        </models>
+
+        <resources>
+            <mofluid_buildandroid_setup>
+                <setup>
+                    <module>Mofluid_Buildandroid</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </mofluid_buildandroid_setup>
+            <mofluid_buildandroid_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </mofluid_buildandroid_write>
+            <mofluid_buildandroid_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </mofluid_buildandroid_read>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mofluid_buildandroid after="Mage_Adminhtml">Mofluid_Buildandroid_Adminhtml</mofluid_buildandroid>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <mofluid_buildandroid>
+                    <file>mofluid_buildandroid.xml</file>
+                </mofluid_buildandroid>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Mofluid_Buildandroid>
+                    <files>
+                        <default>Mofluid_Buildandroid.csv</default>
+                    </files>
+                </Mofluid_Buildandroid>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
